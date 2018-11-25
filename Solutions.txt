@@ -1,0 +1,10 @@
+cat cities.txt | grep 'z$'
+cat cities.txt | grep 'gan\>'
+cat cities.txt | grep -E '^A|^D|^E'
+cat cities.txt | grep \<.ar
+cat cities.txt | grep -v '\<.ar'
+cat cities.txt | grep -E '.{14,}'
+cat cities.txt | grep '^B' | wc -l
+cat cities.txt | grep -o 'd' | wc -l
+cat cities.txt | grep -E '(.)\1\>'
+cat cities.txt | grep -Ei '^(.)(.)(.)\2\1$'
